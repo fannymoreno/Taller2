@@ -17,8 +17,8 @@ public class Conexion {
     String user="root";// User de BD
     String pass="admin";// Pass de BD
     String server="jdbc:mysql://localhost:3306/"; //URL de Servidor que aloja la BD (localhost significa que está en su propio computador.
-    String db="bdlogin"; //nombre de la BD
-    String driver="http://localhost/phpmyadmin/db_structure.php?server=1&db=taller2"; //Dependiendo del motor de BD que use, debe modificar este valor.
+    String db="taller2"; //nombre de la BD
+    String driver="com.mysql.jdbc.Driver"; //Dependiendo del motor de BD que use, debe modificar este valor.
     //MYSQL : "jdbc:mysql://localhost/bdejemplo"
     //Derby : "jdbc:derby://localhost/bdejemplo"
     public Conexion() {
