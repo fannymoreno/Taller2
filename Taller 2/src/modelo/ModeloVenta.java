@@ -1,7 +1,55 @@
 
 package modelo;
 
+import java.sql.Date;
+
 
 public class ModeloVenta {
+    private int idVenta;
+    String sucursal;
+    int monto;
+    Date fecha;
+
+    public ModeloVenta(int idVenta, String sucursal, int monto, Date fecha) {
+        this.idVenta = idVenta;
+        this.sucursal = sucursal;
+        this.monto = monto;
+        this.fecha = fecha;
+    }
+
+    public int getIdVenta() {
+        return idVenta;
+    }
+
+    public void setIdVenta(int idVenta) {
+        this.idVenta = idVenta;
+    }
+
+    public String getSucursal() {
+        return sucursal;
+    }
+
+    public void setSucursal(String sucursal) {
+        this.sucursal = sucursal;
+    }
+
+    public int getMonto() {
+        return monto;
+    }
+
+    public void setMonto(int monto) {
+        this.monto = monto;
+    }
+
+    public Date getFecha() {
+        return fecha;
+    }
+
+    public void setFecha(Date fecha) {
+        this.fecha = fecha;
+    }
+    
+    
+    
     
 }
