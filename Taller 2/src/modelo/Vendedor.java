@@ -15,6 +15,13 @@ public class Vendedor {
         this.rut = rut;
     }
 
+    public Vendedor(String nombre) {
+        this.nombre = nombre;
+       
+    }
+    
+    
+
     public int getIdVendedor() {
         return idVendedor;
     }
