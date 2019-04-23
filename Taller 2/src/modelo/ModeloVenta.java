@@ -5,27 +5,27 @@ import java.sql.Date;
 
 
 public class ModeloVenta {
-    private int idVenta;
+   // private int idVenta;
     String sucursal;
     int monto;
-    Date fecha;
-    Vendedor id_vendedor;
+    String fecha;
+    int id_vendedor;
 
-    public ModeloVenta(int idVenta, String sucursal, int monto, Date fecha, Vendedor id_vendedor) {
-        this.idVenta = idVenta;
+    public ModeloVenta( String sucursal, int monto, String fecha, int id_vendedor) {
+       // this.idVenta = idVenta;
         this.sucursal = sucursal;
         this.monto = monto;
         this.fecha = fecha;
         this.id_vendedor = id_vendedor;
     }
 
-    public int getIdVenta() {
-        return idVenta;
-    }
-
-    public void setIdVenta(int idVenta) {
-        this.idVenta = idVenta;
-    }
+//    public int getIdVenta() {
+//        return idVenta;
+//    }
+//
+//    public void setIdVenta(int idVenta) {
+//        this.idVenta = idVenta;
+//    }
 
     public String getSucursal() {
         return sucursal;
@@ -43,19 +43,19 @@ public class ModeloVenta {
         this.monto = monto;
     }
 
-    public Date getFecha() {
+    public String getFecha() {
         return fecha;
     }
 
-    public void setFecha(Date fecha) {
+    public void setFecha(String fecha) {
         this.fecha = fecha;
     }
 
-    public Vendedor getId_vendedor() {
+    public int getId_vendedor() {
         return id_vendedor;
     }
 
-    public void setId_vendedor(Vendedor id_vendedor) {
+    public void setId_vendedor(int id_vendedor) {
         this.id_vendedor = id_vendedor;
     }
 

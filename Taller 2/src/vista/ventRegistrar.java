@@ -45,9 +45,9 @@ public class ventRegistrar extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         sucursalCombo = new javax.swing.JComboBox<>();
         jLabel3 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
+        fechaTF = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
-        jTextField2 = new javax.swing.JTextField();
+        montoTF = new javax.swing.JTextField();
         registrarButton = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -63,21 +63,21 @@ public class ventRegistrar extends javax.swing.JFrame {
 
         jLabel2.setText("Sucursal:");
 
-        sucursalCombo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Portal Temuco", "Temuco Centro" }));
+        sucursalCombo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { " " }));
 
         jLabel3.setText("Fecha:");
 
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+        fechaTF.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
+                fechaTFActionPerformed(evt);
             }
         });
 
         jLabel4.setText("Monto:");
 
-        jTextField2.addActionListener(new java.awt.event.ActionListener() {
+        montoTF.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField2ActionPerformed(evt);
+                montoTFActionPerformed(evt);
             }
         });
 
@@ -106,8 +106,8 @@ public class ventRegistrar extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(sucursalCombo, 0, 109, Short.MAX_VALUE)
                             .addComponent(nombreComb, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jTextField1)
-                            .addComponent(jTextField2)))
+                            .addComponent(fechaTF)
+                            .addComponent(montoTF)))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(73, 73, 73)
                         .addComponent(registrarButton)))
@@ -127,11 +127,11 @@ public class ventRegistrar extends javax.swing.JFrame {
                 .addGap(39, 39, 39)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(fechaTF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(40, 40, 40)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel4)
-                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(montoTF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(registrarButton)
                 .addContainerGap(24, Short.MAX_VALUE))
@@ -142,13 +142,13 @@ public class ventRegistrar extends javax.swing.JFrame {
 
   
 
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+    private void fechaTFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fechaTFActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
+    }//GEN-LAST:event_fechaTFActionPerformed
 
-    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
+    private void montoTFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_montoTFActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField2ActionPerformed
+    }//GEN-LAST:event_montoTFActionPerformed
 
     private void registrarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_registrarButtonActionPerformed
         // TODO add your handling code here:
@@ -195,14 +195,14 @@ public class ventRegistrar extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    public javax.swing.JTextField fechaTF;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
+    public javax.swing.JTextField montoTF;
     public javax.swing.JComboBox<String> nombreComb;
     private javax.swing.JButton registrarButton;
-    private javax.swing.JComboBox<String> sucursalCombo;
+    public javax.swing.JComboBox<String> sucursalCombo;
     // End of variables declaration//GEN-END:variables
 }
