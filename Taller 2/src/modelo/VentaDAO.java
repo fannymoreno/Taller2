@@ -25,7 +25,7 @@ public class VentaDAO {
         Vendedor vend=null;
         ModeloVenta c = null;
         try{
-            String sql="SELECT * FROM cuenta WHERE idcuenta='"+idVenta+"'";
+            String sql="SELECT * FROM vend WHERE idventa='"+idVenta+"'";
             //ejemplo: SELECT * FROM Customers WHERE Country='Mexico'; 
             //System.out.println(sql);
             Statement st = accesoBD.createStatement();

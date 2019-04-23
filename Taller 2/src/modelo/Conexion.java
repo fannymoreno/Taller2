@@ -5,6 +5,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.sql.DataSource;
 import javax.swing.JOptionPane;
 
 /**
@@ -12,6 +13,8 @@ import javax.swing.JOptionPane;
  * @author chelo
  */
 public class Conexion {
+    
+    public DataSource dataSource;
     
     Connection con=null;
     String user="root";// User de BD

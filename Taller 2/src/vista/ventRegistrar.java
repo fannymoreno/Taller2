@@ -5,16 +5,31 @@
  */
 package vista;
 
+import java.awt.event.ActionEvent;
+import javax.swing.JButton;
+import javax.swing.JComboBox;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+
 /**
  *
  * @author Antonia
  */
+
 public class ventRegistrar extends javax.swing.JFrame {
 
    
     public ventRegistrar() {
         initComponents();
+    registrarButton.addActionListener((e)->{Registrar(e);});
     }
+    
+     public void Registrar(ActionEvent e){
+        VentanaReportes vR= new VentanaReportes();
+        vR.setVisible(true);
+    }
+     
+
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -33,7 +48,7 @@ public class ventRegistrar extends javax.swing.JFrame {
         jTextField1 = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
         jTextField2 = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
+        registrarButton = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -66,10 +81,10 @@ public class ventRegistrar extends javax.swing.JFrame {
             }
         });
 
-        jButton1.setText("Registrar");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        registrarButton.setText("Registrar");
+        registrarButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                registrarButtonActionPerformed(evt);
             }
         });
 
@@ -95,7 +110,7 @@ public class ventRegistrar extends javax.swing.JFrame {
                             .addComponent(jTextField2)))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(73, 73, 73)
-                        .addComponent(jButton1)))
+                        .addComponent(registrarButton)))
                 .addContainerGap(42, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -118,12 +133,14 @@ public class ventRegistrar extends javax.swing.JFrame {
                     .addComponent(jLabel4)
                     .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addComponent(jButton1)
+                .addComponent(registrarButton)
                 .addContainerGap(24, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+  
 
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
         // TODO add your handling code here:
@@ -133,9 +150,9 @@ public class ventRegistrar extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField2ActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void registrarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_registrarButtonActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_registrarButtonActionPerformed
 
     private void nombreCombActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nombreCombActionPerformed
         // TODO add your handling code here:
@@ -178,7 +195,6 @@ public class ventRegistrar extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -186,6 +202,7 @@ public class ventRegistrar extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
     public javax.swing.JComboBox<String> nombreComb;
+    private javax.swing.JButton registrarButton;
     private javax.swing.JComboBox<String> sucursalCombo;
     // End of variables declaration//GEN-END:variables
 }
