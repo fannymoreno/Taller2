@@ -5,7 +5,6 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import javax.sql.DataSource;
 import javax.swing.JOptionPane;
 
 /**
@@ -13,8 +12,6 @@ import javax.swing.JOptionPane;
  * @author chelo
  */
 public class Conexion {
-    
-    public DataSource dataSource;
     
     Connection con=null;
     String user="root";// User de BD
@@ -24,6 +21,7 @@ public class Conexion {
     String driver="com.mysql.jdbc.Driver"; //Dependiendo del motor de BD que use, debe modificar este valor.
     //MYSQL : "jdbc:mysql://localhost/bdejemplo"
     //Derby : "jdbc:derby://localhost/bdejemplo"
+    
     public Conexion() {
         
         try {
