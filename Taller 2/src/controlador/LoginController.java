@@ -1,3 +1,4 @@
+
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
@@ -54,13 +55,12 @@ public class LoginController implements ActionListener{
     int idV=ven.getIdVendedor();
     
     String Sucursal= vLogin.nombreComb.getSelectedItem().toString();
-    String fecha= vLogin..getText();
-   int monto=Integer.parseInt(vrv.MontoTF.getText());
+  // int monto=Integer.parseInt(ven..MontoTF.getText());
     VentaDAO vdao=new VentaDAO();
-    Venta v=new Venta(1,Sucursal,monto,fecha,idV);
-    vdao.ingresarVenta(v);
+  //  Venta v=new Venta(1,Sucursal,monto,fecha,idV);
+   // vdao.ingresarVenta(v);
     }
-
+}
 
     
 //    @Override
@@ -108,7 +108,7 @@ public class LoginController implements ActionListener{
 //        }
 //        
 //    }
-}
+
     
     
 
